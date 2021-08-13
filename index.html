@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>PONG!</title>
+<style>
+@font-face {
+  font-family: "game";
+  src: url("ARCADECLASSIC.TTF");
+}
+canvas {
+	border: 1px solid black;
+	padding: 0;
+    margin: auto;
+    display: block;
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+h1 {
+	font-family: "game";
+	font-size: 50px;
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+<h1>PONG!</h1>
+
+<audio id="bounce">
+  <source src="bounce.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<audio id="score">
+  <source src="score.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<canvas id="gameCanvas" width="800" height = "600" style="border:1px solid #000000;"></canvas>
+<script src="index.js"></script>
+</body>
+
+</html>
